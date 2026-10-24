@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 200" width="800" height="200" role="img" aria-labelledby="sk-banner-t sk-banner-d">
+<title id="sk-banner-t">skills</title>
+<desc id="sk-banner-d">The skills wordmark beside the tagline "Agent skills for thinking, writing and research", with a small fan of skill cards marked by a green check.</desc>
+<style>
+.bg { fill: #F3F5F6; stroke: #C9D1D6; stroke-width: 1; }
+.soft { fill: #E2F1EA; }
+.acc { fill: #0B6A4C; }
+.on { fill: none; stroke: #FFFFFF; stroke-width: 5.5; stroke-linecap: round; }
+.ink { fill: #121719; }
+.muted { fill: #4A555B; }
+.card { fill: #FFFFFF; stroke: #77838A; stroke-width: 2; }
+.ln { fill: none; stroke: #C9D1D6; stroke-width: 4; stroke-linecap: round; }
+.ck { fill: none; stroke: #FFFFFF; stroke-width: 3.5; stroke-linecap: round; stroke-linejoin: round; }
+text { font-family: "Source Sans 3", "Segoe UI", system-ui, -apple-system, sans-serif; }
+.mono { font-family: "JetBrains Mono", "Cascadia Mono", Consolas, ui-monospace, Menlo, monospace; font-weight: 600; }
+@media (prefers-color-scheme: dark) {
+  .bg { fill: #161B1E; stroke: #30393E; }
+  .soft { fill: #13342A; }
+  .acc { fill: #5BD0A0; }
+  .on { stroke: #062118; }
+  .ck { stroke: #062118; }
+  .ink { fill: #E8EDEF; }
+  .muted { fill: #A9B4BA; }
+  .card { fill: #1E2529; stroke: #7D8A91; }
+  .ln { stroke: #30393E; }
+}
+</style>
+<rect class="bg" x="0.5" y="0.5" width="799" height="199" rx="18"/>
+<ellipse class="soft" cx="664" cy="100" rx="112" ry="74"/>
+<g transform="rotate(-12 626 112)">
+<rect class="card" x="592" y="62" width="68" height="88" rx="8"/>
+<path class="ln" d="M606,84 H646 M606,100 H636 M606,116 H642"/>
+</g>
+<g transform="rotate(10 702 112)">
+<rect class="card" x="668" y="62" width="68" height="88" rx="8"/>
+<path class="ln" d="M682,84 H722 M682,100 H712 M682,116 H718"/>
+</g>
+<rect class="card" x="630" y="48" width="68" height="88" rx="8"/>
+<path class="ln" d="M644,70 H684 M644,86 H674 M644,102 H680"/>
+<circle class="acc" cx="694" cy="134" r="15"/>
+<path class="ck" d="M687,134 L692,139 L701,129"/>
+<rect class="acc" x="48" y="48" width="56" height="56" rx="12"/>
+<path class="on" d="M72,61 L64,91 M76,90 H90"/>
+<text class="ink mono" x="122" y="92" style="font-size:46px">skills</text>
+<text class="muted" x="48" y="152" style="font-size:22px">Agent skills for thinking, writing and research.</text>
+</svg>

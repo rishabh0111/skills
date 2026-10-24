@@ -10,6 +10,7 @@
 //
 // Reads each SKILL.md frontmatter (name, description, disable-model-invocation).
 // Skills with disable-model-invocation: true are user-run and shown as /name.
+// The README block opens with the skill counts, then one table per group (### headings).
 // The README's groups, "Say this" and "You get" come from scripts/readme.json; a
 // skill missing from it goes in an "Other" group with the first sentence of its
 // description. No dependencies. Running it twice changes nothing the second time.
@@ -129,9 +130,10 @@ function readmeTables() {
     if (listed.has(s.name)) continue;
     add("Other", [label(s), s.userRun ? `type \`/${s.name}\`` : "applies on its own", s.what.replace(/\.$/, "")]);
   }
-  const out = [];
+  const run = allSkills.filter((s) => s.userRun).length;
+  const out = [`${allSkills.length} skills: ${run} you run by typing their name with a slash, and ${allSkills.length - run} that apply on their own.`, ""];
   for (const [group, rows] of groups) {
-    out.push(`## ${group}`, "", "| Skill | Say this | You get |", "|---|---|---|");
+    out.push(`### ${group}`, "", "| Skill | Say this | You get |", "|---|---|---|");
     for (const r of rows) out.push(`| ${r.map(cell).join(" | ")} |`);
     out.push("");
   }
