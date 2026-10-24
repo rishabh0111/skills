@@ -1,0 +1,86 @@
+[
+  {
+    "skill": "sk-ask",
+    "group": "Not sure which?",
+    "say": "\"which skill helps me plan a talk?\"",
+    "get": "The skill to run next, and why"
+  },
+  {
+    "skill": "sk-stress-test",
+    "group": "Think",
+    "say": "\"stress-test my plan to move billing to Stripe\"",
+    "get": "Every open decision in rounds, each with a recommended answer"
+  },
+  {
+    "skill": "sk-brainstorming",
+    "group": "Think",
+    "say": "\"I want to build something for my running club\"",
+    "get": "Questions until the real want is clear, then a written design"
+  },
+  {
+    "skill": "sk-discover-intent",
+    "group": "Think",
+    "say": "applies on its own when a request is vague",
+    "get": "The goal behind the ask, before any work starts"
+  },
+  {
+    "skill": "sk-decision-rounds",
+    "group": "Think",
+    "say": "applies on its own when decisions are open",
+    "get": "The engine behind stress-test: one round of numbered questions at a time"
+  },
+  {
+    "skill": "sk-questionnaire",
+    "group": "Think",
+    "say": "\"turn this decision into questions for the finance team\"",
+    "get": "A questionnaire someone else can fill in"
+  },
+  {
+    "skill": "sk-research",
+    "group": "Write and research",
+    "say": "\"find out what the EU AI Act requires for chatbots\"",
+    "get": "A cited answer from primary sources, saved to a file"
+  },
+  {
+    "skill": "sk-writing",
+    "group": "Write and research",
+    "say": "\"proofread this cover letter\", or on its own when you write or edit prose",
+    "get": "Plain, clear text without machine-sounding tells, or a list of grammar, logic and flow fixes"
+  },
+  {
+    "skill": "sk-explain-plainly",
+    "group": "Write and research",
+    "say": "\"wait, explain that again\"",
+    "get": "The last answer in plain words"
+  },
+  {
+    "skill": "sk-resume",
+    "group": "Write and research",
+    "say": "\"tailor my résumé to this job posting\"",
+    "get": "A scored review with the top fixes, or a tailored résumé with a gap analysis"
+  },
+  {
+    "skill": "sk-handoff",
+    "group": "Work with agents",
+    "say": "\"hand this off, the next session will write the tests\"",
+    "get": "A handoff document a fresh agent can pick up"
+  },
+  {
+    "skill": "sk-teach",
+    "group": "Work with agents",
+    "say": "\"teach me Kubernetes over the next few weeks\"",
+    "get": "A teaching workspace with lessons and practice across sessions"
+  },
+  {
+    "skill": "sk-writing-for-agents",
+    "group": "Work with agents",
+    "say": "applies on its own when you edit a skill or CLAUDE.md",
+    "get": "Rules for writing documents an agent reads well"
+  },
+  {
+    "skill": "sk-build-skill",
+    "group": "Work with agents",
+    "say": "\"make a skill for our release checklist\"",
+    "get": "A new skill, tested against subagents before you rely on it"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "name": "skills",
+  "owner": { "name": "rishabh0111", "url": "https://github.com/rishabh0111" },
+  "metadata": { "description": "General-purpose agent skills that every other pack builds on." },
+  "plugins": [
+    { "name": "skills-core", "source": "./plugins/skills-core", "description": "General-purpose skills: decision rounds, brainstorming, handoff, research, teaching, writing and skill authoring." }
+  ]
+}
