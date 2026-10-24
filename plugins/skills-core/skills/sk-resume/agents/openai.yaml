@@ -1,0 +1,5 @@
+interface:
+  display_name: "Resume"
+  short_description: "Review a résumé, or tailor it to a job posting"
+policy:
+  allow_implicit_invocation: false

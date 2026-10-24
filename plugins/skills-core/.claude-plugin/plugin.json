@@ -1,0 +1,7 @@
+{
+  "name": "skills-core",
+  "version": "1.0.0",
+  "description": "General-purpose skills: decision rounds, brainstorming, handoff, research, teaching, writing, résumés and skill authoring.",
+  "author": { "name": "rishabh0111", "url": "https://github.com/rishabh0111" },
+  "repository": "https://github.com/rishabh0111/skills"
+}
