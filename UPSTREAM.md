@@ -32,6 +32,8 @@ This file records where each skill in this repo came from: the upstream repo, th
 | sk-writing | humanizer, the-elements-of-style, pm-skills | `humanizer:SKILL.md` `the-elements-of-style:skills/writing-clearly-and-concisely` `pm-skills:pm-toolkit/skills/grammar-check` `pm-skills:pm-toolkit/commands/proofread.md` | merged |
 | sk-writing-for-agents | mattpocock-skills | `skills/productivity/writing-for-agents` | as-is |
 
+`sk-book-notes` and `sk-reading-pdf` are original to this repo and have no upstream.
+
 ## How to port an upstream change
 
 1. Clone the upstream repo (or `git pull` an existing clone) and run `scripts/upstream-diff.sh <clone>` from this repo to see which rows have new commits.

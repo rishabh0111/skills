@@ -27,7 +27,7 @@ These skills cover that ground. Interviews ask one round of numbered questions a
 ## Skills
 
 <!-- skills:start -->
-14 skills: 9 you run by typing their name with a slash, and 5 that apply on their own.
+16 skills: 9 you run by typing their name with a slash, and 7 that apply on their own.
 
 ### Not sure which?
 
@@ -53,6 +53,13 @@ These skills cover that ground. Interviews ask one round of numbered questions a
 | `sk-writing` | "proofread this cover letter", or on its own when you write or edit prose | Plain, clear text without machine-sounding tells, or a list of grammar, logic and flow fixes |
 | `/sk-explain-plainly` | "wait, explain that again" | The last answer in plain words |
 | `/sk-resume` | "tailor my résumé to this job posting" | A scored review with the top fixes, or a tailored résumé with a gap analysis |
+
+### Read
+
+| Skill | Say this | You get |
+|---|---|---|
+| `sk-book-notes` | "How to Read a Book by Adler and Van Doren", or on its own when you mention a book | One clearly explained notes file in the book's own terms, with review prompts, and a PDF of it |
+| `sk-reading-pdf` | "make a PDF of these notes for my Kindle" | One PDF that reads well on a phone, e-reader, tablet or computer |
 
 ### Work with agents
 
@@ -120,6 +127,9 @@ Yes. The skills are plain `SKILL.md` folders with their reference files beside t
 
 **Does it work on Windows?**
 Yes. The visual companion in `sk-brainstorming` starts a local server through a Bash script; on Windows, Git Bash provides it.
+
+**What does `sk-reading-pdf` need?**
+Python 3 with Python-Markdown (`python -m pip install markdown`), and Chrome or Edge, which prints the PDF. Diagrams are drawn from the internet when the PDF is made; offline, they print as plain text.
 
 **How do updates from upstream work?**
 Several skills began as open-source skills by other authors. [UPSTREAM.md](UPSTREAM.md) records the source repository, the commit copied and the paths for each one. `scripts/upstream-diff.sh <path-to-upstream-clone>` lists the upstream commits since then that touch those paths, and fixes are ported by hand.
