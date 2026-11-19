@@ -60,6 +60,18 @@
     "get": "A scored review with the top fixes, or a tailored résumé with a gap analysis"
   },
   {
+    "skill": "sk-book-notes",
+    "group": "Read",
+    "say": "\"How to Read a Book by Adler and Van Doren\", or on its own when you mention a book",
+    "get": "One clearly explained notes file in the book's own terms, with review prompts, and a PDF of it"
+  },
+  {
+    "skill": "sk-reading-pdf",
+    "group": "Read",
+    "say": "\"make a PDF of these notes for my Kindle\"",
+    "get": "One PDF that reads well on a phone, e-reader, tablet or computer"
+  },
+  {
     "skill": "sk-handoff",
     "group": "Work with agents",
     "say": "\"hand this off, the next session will write the tests\"",

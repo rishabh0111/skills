@@ -1,6 +1,6 @@
 ---
 name: sk-ask
-description: Ask which general skill fits: thinking, writing, research, learning or skill building.
+description: Ask which general skill fits: thinking, writing, research, reading, learning or skill building.
 disable-model-invocation: true
 ---
 
@@ -20,6 +20,11 @@ Answer with the skill to run next and why. Every skill, with its one-line purpos
 - **A question that needs primary sources:** `sk-research` applies on its own, or ask for it by name. It leaves a cited file.
 - **Prose a person will read:** `sk-writing` applies on its own. It writes plainly and removes the tells of machine-written text.
 - **An explanation that didn't land:** `/sk-explain-plainly`.
+
+## Reading
+
+- **A book to understand and remember:** `sk-book-notes` applies on its own when you mention a book. It writes one notes file in the book's own terms, with review prompts, then a PDF of it.
+- **A Markdown file to read on a phone or e-reader:** `sk-reading-pdf` makes one PDF that reads well on any screen.
 
 ## Working across sessions and agents
 
