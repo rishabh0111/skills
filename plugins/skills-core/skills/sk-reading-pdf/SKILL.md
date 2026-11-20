@@ -5,7 +5,7 @@ description: Converts a Markdown file, such as book notes, into one PDF that rea
 
 # Reading PDF
 
-A PDF does not reflow: viewers scale each page to the screen. So readability rests on the type's size relative to the page, not its printed size. This skill makes one PDF on an A4 page with 12pt body type, about 75 characters a line. It prints at normal document size and reads comfortably on a tablet or computer; on a phone or small e-reader the type is smaller, so zoom or turn the device to landscape.
+A PDF does not reflow: viewers scale each page to the screen. So readability rests on the type's size relative to the page, not its printed size. This skill makes one PDF on a page the size and 3:4 shape of a Kindle Paperwhite screen (107 × 142 mm), with 12pt body type, about 44 characters a line. The Paperwhite shows it at printed size with nothing cropped, a phone near the size of web text, and a tablet or computer larger.
 
 ## 1. Make the PDF
 
@@ -21,9 +21,9 @@ It needs Python-Markdown (`python -m pip install markdown`) and Chrome or Edge; 
 
 What the converter handles, so the source needs no changes:
 
-- **Type for screens**: a screen-made serif for reading, black on white for e-ink, ragged right with hyphenation, standard A4 margins, generous line spacing.
+- **Type for screens**: a screen-made serif for reading, black on white for e-ink, ragged right with hyphenation, slim side margins, generous line spacing.
 - **Page flow**: each `##` section starts a new page, no heading or lead-in line is left at the foot of a page, and no list item, quote or diagram is split across pages.
-- **Navigation**: a contents page whose entries are links, PDF bookmarks for the side panel, and page numbers.
+- **Navigation**: a contents page whose entries are links, PDF bookmarks for the side panel, and page numbers set well inside the bottom margin, clear of the strip an e-reader trims or covers.
 - **Review prompts**: each run of `question :: answer` lines becomes a numbered list of questions, with the answers on the following page, so the reader recalls before turning.
 - **Overflow**: code, tables and images wrap or scale to the page width.
 

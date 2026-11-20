@@ -3,10 +3,12 @@
 Usage:
     python make_pdf.py NOTES.md [--out-dir DIR] [--lang en] [--keep-html]
 
-The page is A4, with 12pt body type giving about 75 characters a line: it
-prints at normal document size and reads comfortably on a tablet or computer.
-Viewers scale a page to the screen, so on a phone or small e-reader the type
-is smaller and reads best zoomed or in landscape.
+The page matches a Kindle Paperwhite screen: 107 x 142 mm, the 3:4 shape of
+e-reader and tablet screens. Viewers scale a page to the screen, so on the
+Paperwhite it shows at printed size with 12pt body type (about 44 characters a
+line), on a phone near the size of web text, and on a tablet larger. The page
+number sits well inside the bottom margin, clear of the strip e-readers trim
+or cover with their own reading bar.
 Needs Python-Markdown (pip install markdown) and Chrome or Edge.
 """
 
@@ -25,11 +27,12 @@ try:
 except ImportError:
     sys.exit("Python-Markdown is missing: run  python -m pip install markdown")
 
-# One layout for every screen: A4, moderate margins, and body type giving
-# about 75 characters a line.
+# One layout for every screen: the Kindle Paperwhite's screen size and 3:4 shape,
+# slim side margins because devices add their own bezel, a deep bottom margin so
+# the page number stays clear of the edge, and body type giving ~44 characters a line.
 LAYOUT = {
-    "size": "210mm 297mm",  # A4
-    "margin": "18mm 20mm 20mm 20mm",
+    "size": "107mm 142mm",
+    "margin": "8mm 7mm 15mm 7mm",
     "body": "12pt",
 }
 
@@ -37,7 +40,10 @@ CSS = """
 @page {
   size: %(size)s;
   margin: %(margin)s;
-  @bottom-center { content: counter(page); font: 8pt "Segoe UI", Arial, sans-serif; color: #000; }
+  @bottom-center {
+    content: counter(page); vertical-align: top; padding-top: 2.5mm;
+    font: 8pt "Segoe UI", Arial, sans-serif; color: #000;
+  }
 }
 @page :first { @bottom-center { content: none; } }
 
