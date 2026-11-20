@@ -3,10 +3,10 @@
 Usage:
     python make_pdf.py NOTES.md [--out-dir DIR] [--lang en] [--keep-html]
 
-The page is A6, the standard pocket-book size in the ISO 1:sqrt(2) shape.
-Viewers scale a page to the screen, so readability rests on the type's size
-relative to the page: about 43 characters a line, which a 6-inch e-reader shows
-near printed size, a phone near the size of web text, and a tablet larger.
+The page is A4, with 12pt body type giving about 75 characters a line: it
+prints at normal document size and reads comfortably on a tablet or computer.
+Viewers scale a page to the screen, so on a phone or small e-reader the type
+is smaller and reads best zoomed or in landscape.
 Needs Python-Markdown (pip install markdown) and Chrome or Edge.
 """
 
@@ -25,11 +25,11 @@ try:
 except ImportError:
     sys.exit("Python-Markdown is missing: run  python -m pip install markdown")
 
-# One layout for every screen: A6, slim margins because devices add their own
-# bezel, and body type giving about 43 characters a line.
+# One layout for every screen: A4, moderate margins, and body type giving
+# about 75 characters a line.
 LAYOUT = {
-    "size": "105mm 148mm",  # A6; Chrome does not know the name "A6"
-    "margin": "8mm 7mm 10mm 7mm",
+    "size": "210mm 297mm",  # A4
+    "margin": "18mm 20mm 20mm 20mm",
     "body": "12pt",
 }
 
